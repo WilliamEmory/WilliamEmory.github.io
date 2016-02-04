@@ -1,0 +1,9 @@
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+#menu li { 
+display: inline; 
+padding: 20px; 
+}
