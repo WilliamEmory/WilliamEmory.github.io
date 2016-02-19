@@ -7,15 +7,32 @@
 display: inline; 
 padding: 20px; 
 }
-
+#menu {
+	background-color: #74AFAD;
+	color: #ffffff;
+	margin: 0;
+}
+div#menu a {
+color: #ffffff;
+}
+.header {
+	background-color: #74AFAD;
+	color: #ffffff;
+	margin: 0;
+	padding-left: 1em;
+}
+.content {
+	background-color: #ECECEA;
+	margin: 0;
+	padding-left: 1em;
+	width: 40%;
+}
 body {
-    background-color: #558C89;
+	background-color: #ECECEA;
+	margin: 0;
 }
 
 h1 {
     background-color: #74AFAD;
-}
-
-p {
-    background-color: #ECECEA;
+	margin: 0;
 }
