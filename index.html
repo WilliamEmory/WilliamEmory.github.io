@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="site.css">
 </head>
 <body>
@@ -17,12 +18,67 @@
 	</ul>
 </div></br>
 <div class= "content">
-	<p>About Me</p>
-	<p>Coming Soon!</p></br><br>
-	<p>Career Goals</p>
-	<p>Coming Soon!</p></br><br>
-	<p>General Education</p>
-	<p>Coming Soon!</p></br><br>
+	<p><b>About Me</b><br>
+	<br>Coming Soon!</p></br><br>
+	<p><b>Career Goals</b><br>
+	<br>Coming Soon!</p></br><br>
+	<p><b>General Education</b></p>
+	<ul>
+		  <li><p id="geGoalsHeader"><b>Goals &#x25BC </b><br>
+			<div id="geGoalsContent">
+				As I look towards graduation I see a world of opportunity in front of me, a chance to apply the skills I have worked for four years to master. 
+				In the short term I am looking for a job in software development pending graduation at the end of 2016. In the long term I am looking to work 
+				in an environment with fellow engineers who push me to learn and excel as a software engineer. I love learning and want to work with a company 
+				that supports that. Working for a company that constantly pushes the definitions and boundaries of what is possible through innovation and using 
+				cutting edge software technologies is a dream of mine. 
+			</div>
+			</p><br>
+		  </li>
+		  <li><p id="gePrepHeader"><b>How My Classes Have Prepared Me for a Career in Problem Solving &#x25BC </b><br>
+			<div id="gePrepContent">
+				My GE classes at Iowa State have taught more than simply how to code. While it is true Iowa State does a great job of teaching C and Java, 
+				those languages comprise only a small subset of what I know. I have learned JavaScript, Python, C++, SQL, basic Android development, how to 
+				create a website, how to extract information from a Hadoop server cluster, embedded systems, and more. Iowa State taught me how to teach myself. 
+				Many classes do not offer simple answers to problems, and as a student it is my job to use anything at my disposal (languages, data structures, etc.) 
+				to solve a problem.
+			</p>
+			<p>
+				An example of a general elective course offering me insight into an engineering problem was my English 314 class. It focused on various forms of 
+				visual media. As a result I learned some key basics of design for brochures, websites, memos, and other forms of communication. There is more to 
+				being an engineer then simply coding. Making a well-designed website is just as important as making a well working one. Iowa State did a great job 
+				of making me well rounded, so I can function in the business world, not just function in front of a computer. 
+			</div>
+			</p><br>
+		  </li>
+	</ul>
 </div>
 </body>
+<script>
+	$(document).ready(function(){
+		$("#geGoalsHeader").click(function(){
+			if($("#geGoalsContent").is(":visible")){
+				$("#geGoalsHeader").html("<b>Goals &#x25BC</b>");
+				$("#geGoalsContent").hide(200);
+				console.log("visible");
+			}
+			else{
+				$("#geGoalsHeader").html("<b>Goals &#x25B2</b>");
+				$("#geGoalsContent").show(200);
+				console.log("hidden");
+			}
+		});
+		$("#gePrepHeader").click(function(){
+			if($("#gePrepContent").is(":visible")){
+				$("#gePrepHeader").html("<b>How My Classes Have Prepared Me for a Career in Problem Solving &#x25BC</b>");
+				$("#gePrepContent").hide(200);
+				console.log("visible");
+			}
+			else{
+				$("#gePrepHeader").html("<b>How My Classes Have Prepared Me for a Career in Problem Solving &#x25BC</b>");
+				$("#gePrepContent").show(200);
+				console.log("hidden");
+			}
+		});
+	});
+</script>
 </html>
