@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="pdfobject.min.js"></script>
 <link rel="stylesheet" type="text/css" href="site.css">
 </head>
 <body>
@@ -17,7 +18,11 @@
 	</ul>
 </div></br>
 <div class= "content">
-	<p>Coming Soon!</p>
+	<p><b>Resume</b><br>
+	<div id="resumeContent"></div>
 </div>
 </body>
+<script>
+PDFObject.embed("docs/Resume_Emory.pdf", "#resumeContent");
+</script>
 </html>
