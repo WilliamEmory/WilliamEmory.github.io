@@ -4,11 +4,12 @@
     margin: 0px;
 }
 #menu li { 
-display: inline; 
-padding: 20px; 
+	display: inline; 
+	padding: 20px; 
 }
 #menu {
 	background-color: #74AFAD;
+	padding-left: 30%;
 	color: #ffffff;
 	margin: 0;
 }
@@ -17,19 +18,20 @@ color: #ffffff;
 }
 
 .pdfobject-container { 
-height: 500px;
+height: 1100px;
 
 }
 .header {
 	background-color: #74AFAD;
 	color: #ffffff;
 	margin: 0;
-	padding-left: 1em;
+	padding-left: 30%;
 }
+
 .content {
 	background-color: #ECECEA;
 	margin: 0;
-	padding-left: 1em;
+	padding-left: 30%;
 	width: 40%;
 }
 body {

@@ -18,7 +18,8 @@
 	</ul>
 </div></br>
 <div class= "content", id="content">
-	<p id="diplomacyHeader"><b>DiplomaCY Project &#x25BC </b></br>
+	<p id="diplomacyHeader"><b>DiplomaCY Project</b></br>
+	<img src="images/diplomacy.jpg" style="width:300px;height:200px; padding: 20px 0px;">
 		<div id ="diplomacyContent">
 			This was a project I worked on with Seth Rickard, Ian Abbott, and Jim Tappe. For a semester long project at Iowa State we decided to create an online interactive
 			version of the board game Diplomacy, which is a strategy game similar in function to that of Risk. To create this project we used Java Servlets to interface with
@@ -27,7 +28,8 @@
 			using JSON objects, and writing servlets to create an interactive game that was playable by multiple people on different machines. 
 		</div>
 	</p><br>
-	<p id="TabManHeader"><b>Tab Manager Project &#x25BC </b></br>
+	<p id="TabManHeader"><b>Tab Manager Project</b></br>
+	<img src="images/tabManager.jpg" style="width:300px;height:200px; padding: 20px 0px;">
 		<div id ="TabManContent">
 			This project invloved creating a tab manager in Chrome to manage and save tabs that were left open. It was designed for people who like to have ten or twenty or more
 			tabs open, but don't want to close out anything for fear of needing it later. It was designed to collapse open tabs into a list that could be accessed via the plugin
@@ -37,7 +39,8 @@
 			Chrome, and provided me with the opportunity to further my experience with JavaScript and Jquery.
 		</div>
 	</p ><br>
-	<p id="EmbSysHeader"><b>Embedded Systems Autonomous Robot Project &#x25BC </b><br>
+	<p id="EmbSysHeader"><b>Embedded Systems Autonomous Robot Project</b><br>
+	<img src="images/isuRobot.jpg" style="width:300px;height:200px; padding: 20px 0px;">
 		<div id ="EmbSysContent">
 			The culmination of a brief series of embedded systems classes I took at Iowa State resulted in the opportunity to program a robot through an obstacle course over the
 			course of the semester. I worked with Seth Rickard and Ian Abbott to create a program that could effectively use IR, sonar, touch, and floor sensors to autonomously
@@ -53,34 +56,34 @@
 $(document).ready(function(){
 	$("#diplomacyHeader").click(function(){
 		if($("#diplomacyContent").is(":visible")){
-			$("#diplomacyHeader").html("<b>DiplomaCY Project &#x25BC</b>");
+			$("#diplomacyHeader").html("<b>DiplomaCY Project</b>");
 			$("#diplomacyContent").hide(200);
 			console.log("visible");
 		}
 		else{
-			$("#diplomacyHeader").html("<b>DiplomaCY Project &#x25B2</b>");
+			$("#diplomacyHeader").html("<b>DiplomaCY Project</b>");
 			$("#diplomacyContent").show(200);
 			console.log("hidden");
 		}
 	});
 	$("#TabManHeader").click(function(){
 		if($("#TabManContent").is(":visible")){
-			$("#TabManHeader").html("<b>Tab Manager Project &#x25BC</b>");
+			$("#TabManHeader").html("<b>Tab Manager Project</b>");
 			$("#TabManContent").hide(200);
 		}
 		else{
-			$("#TabManHeader").html("<b>Tab Manager Project &#x25B2</b>");
+			$("#TabManHeader").html("<b>Tab Manager Project</b>");
 			$("#TabManContent").show(200);
 		}
 	});
 	$("#EmbSysHeader").click(function(){
 		if($("#EmbSysContent").is(":visible")){
-			$("#EmbSysHeader").html("<b>Embedded Systems Project &#x25BC</b>");
+			$("#EmbSysHeader").html("<b>Embedded Systems Project</b>");
 			$("#EmbSysContent").hide(200);
 			console.log("visible");
 		}
 		else{
-			$("#EmbSysHeader").html("<b>Embedded Systems Project &#x25B2</b>");
+			$("#EmbSysHeader").html("<b>Embedded Systems Project</b>");
 			$("#EmbSysContent").show(200);
 		}
 	});
